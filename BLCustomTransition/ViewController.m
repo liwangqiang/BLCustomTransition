@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "BLPanelPushTransitioningDelegate.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) BLPanelPushTransitioningDelegate *PanelTransitionDelegate;
 
 @end
 
@@ -19,9 +22,29 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showMenu"]) {
+        segue.destinationViewController.transitioningDelegate = self.PanelTransitionDelegate;
+        segue.destinationViewController.modalPresentationStyle = UIModalPresentationCustom;
+    }
+}
+
+#pragma mark - for unwind
+
+- (IBAction)unwindFromMenuViewController:(UIStoryboardSegue *)segue
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - Properties
+
+- (BLPanelPushTransitioningDelegate *)PanelTransitionDelegate
+{
+    if (!_PanelTransitionDelegate) {
+        _PanelTransitionDelegate = [BLPanelPushTransitioningDelegate new];
+    }
+    return _PanelTransitionDelegate;
 }
 
 @end

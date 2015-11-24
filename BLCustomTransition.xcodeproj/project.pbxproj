@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F3A922D1C0455FE0079D6CA /* BLProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3A922C1C0455FE0079D6CA /* BLProfileViewController.m */; };
 		1FB7E0C51C02F36500018F65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7E0C41C02F36500018F65 /* main.m */; };
 		1FB7E0C81C02F36500018F65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7E0C71C02F36500018F65 /* AppDelegate.m */; };
 		1FB7E0CB1C02F36500018F65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7E0CA1C02F36500018F65 /* ViewController.m */; };
@@ -15,6 +16,11 @@
 		1FB7E0D31C02F36500018F65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB7E0D11C02F36500018F65 /* LaunchScreen.storyboard */; };
 		1FB7E0DE1C02F36500018F65 /* BLCustomTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7E0DD1C02F36500018F65 /* BLCustomTransitionTests.m */; };
 		1FB7E0E91C02F36500018F65 /* BLCustomTransitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7E0E81C02F36500018F65 /* BLCustomTransitionUITests.m */; };
+		1FB7E0F81C02F48D00018F65 /* BLPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7E0F71C02F48D00018F65 /* BLPanelViewController.m */; };
+		1FB7E0FB1C02F87B00018F65 /* BLPanelPushAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7E0FA1C02F87B00018F65 /* BLPanelPushAnimatedTransition.m */; };
+		1FB7E0FE1C0305D700018F65 /* BLPanelPushPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7E0FD1C0305D700018F65 /* BLPanelPushPresentationController.m */; };
+		1FB7E1011C0328FD00018F65 /* BLPanelPushTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7E1001C0328FD00018F65 /* BLPanelPushTransitioningDelegate.m */; };
+		B6D634B4AA436671864537C1 /* Pods_BLCustomTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4891CB1AB46D71E15C2749 /* Pods_BLCustomTransition.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F3A922B1C0455FE0079D6CA /* BLProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLProfileViewController.h; sourceTree = "<group>"; };
+		1F3A922C1C0455FE0079D6CA /* BLProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLProfileViewController.m; sourceTree = "<group>"; };
+		1F4891CB1AB46D71E15C2749 /* Pods_BLCustomTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLCustomTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB7E0C01C02F36500018F65 /* BLCustomTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLCustomTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB7E0C41C02F36500018F65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1FB7E0C61C02F36500018F65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +60,16 @@
 		1FB7E0E41C02F36500018F65 /* BLCustomTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLCustomTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB7E0E81C02F36500018F65 /* BLCustomTransitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLCustomTransitionUITests.m; sourceTree = "<group>"; };
 		1FB7E0EA1C02F36500018F65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FB7E0F61C02F48D00018F65 /* BLPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPanelViewController.h; sourceTree = "<group>"; };
+		1FB7E0F71C02F48D00018F65 /* BLPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPanelViewController.m; sourceTree = "<group>"; };
+		1FB7E0F91C02F87B00018F65 /* BLPanelPushAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPanelPushAnimatedTransition.h; sourceTree = "<group>"; };
+		1FB7E0FA1C02F87B00018F65 /* BLPanelPushAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPanelPushAnimatedTransition.m; sourceTree = "<group>"; };
+		1FB7E0FC1C0305D700018F65 /* BLPanelPushPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPanelPushPresentationController.h; sourceTree = "<group>"; };
+		1FB7E0FD1C0305D700018F65 /* BLPanelPushPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPanelPushPresentationController.m; sourceTree = "<group>"; };
+		1FB7E0FF1C0328FD00018F65 /* BLPanelPushTransitioningDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPanelPushTransitioningDelegate.h; sourceTree = "<group>"; };
+		1FB7E1001C0328FD00018F65 /* BLPanelPushTransitioningDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPanelPushTransitioningDelegate.m; sourceTree = "<group>"; };
+		5FD2262991C154F0838C0D96 /* Pods-BLCustomTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLCustomTransition.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLCustomTransition/Pods-BLCustomTransition.release.xcconfig"; sourceTree = "<group>"; };
+		B769ECD1FB625A2E4D5E9FEE /* Pods-BLCustomTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLCustomTransition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLCustomTransition/Pods-BLCustomTransition.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D634B4AA436671864537C1 /* Pods_BLCustomTransition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +98,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14A4780BEF94552332617741 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B769ECD1FB625A2E4D5E9FEE /* Pods-BLCustomTransition.debug.xcconfig */,
+				5FD2262991C154F0838C0D96 /* Pods-BLCustomTransition.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1FB7E0B71C02F36500018F65 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +114,8 @@
 				1FB7E0DC1C02F36500018F65 /* BLCustomTransitionTests */,
 				1FB7E0E71C02F36500018F65 /* BLCustomTransitionUITests */,
 				1FB7E0C11C02F36500018F65 /* Products */,
+				BFDEE76C787C5659D4B0E379 /* Frameworks */,
+				14A4780BEF94552332617741 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +136,16 @@
 				1FB7E0C71C02F36500018F65 /* AppDelegate.m */,
 				1FB7E0C91C02F36500018F65 /* ViewController.h */,
 				1FB7E0CA1C02F36500018F65 /* ViewController.m */,
+				1FB7E0F61C02F48D00018F65 /* BLPanelViewController.h */,
+				1FB7E0F71C02F48D00018F65 /* BLPanelViewController.m */,
+				1F3A922B1C0455FE0079D6CA /* BLProfileViewController.h */,
+				1F3A922C1C0455FE0079D6CA /* BLProfileViewController.m */,
+				1FB7E0FF1C0328FD00018F65 /* BLPanelPushTransitioningDelegate.h */,
+				1FB7E1001C0328FD00018F65 /* BLPanelPushTransitioningDelegate.m */,
+				1FB7E0F91C02F87B00018F65 /* BLPanelPushAnimatedTransition.h */,
+				1FB7E0FA1C02F87B00018F65 /* BLPanelPushAnimatedTransition.m */,
+				1FB7E0FC1C0305D700018F65 /* BLPanelPushPresentationController.h */,
+				1FB7E0FD1C0305D700018F65 /* BLPanelPushPresentationController.m */,
 				1FB7E0CC1C02F36500018F65 /* Main.storyboard */,
 				1FB7E0CF1C02F36500018F65 /* Assets.xcassets */,
 				1FB7E0D11C02F36500018F65 /* LaunchScreen.storyboard */,
@@ -140,6 +181,14 @@
 			path = BLCustomTransitionUITests;
 			sourceTree = "<group>";
 		};
+		BFDEE76C787C5659D4B0E379 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F4891CB1AB46D71E15C2749 /* Pods_BLCustomTransition.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FB7E0ED1C02F36500018F65 /* Build configuration list for PBXNativeTarget "BLCustomTransition" */;
 			buildPhases = (
+				7D0AAFD2CDA562554A23871F /* Check Pods Manifest.lock */,
 				1FB7E0BC1C02F36500018F65 /* Sources */,
 				1FB7E0BD1C02F36500018F65 /* Frameworks */,
 				1FB7E0BE1C02F36500018F65 /* Resources */,
+				B46138DAAB5042771854A647 /* Embed Pods Frameworks */,
+				14D48FFCBEA314FECC5BF080 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +259,7 @@
 				TargetAttributes = {
 					1FB7E0BF1C02F36500018F65 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 48RG7GS4YB;
 					};
 					1FB7E0D81C02F36500018F65 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -265,14 +318,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14D48FFCBEA314FECC5BF080 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BLCustomTransition/Pods-BLCustomTransition-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D0AAFD2CDA562554A23871F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B46138DAAB5042771854A647 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BLCustomTransition/Pods-BLCustomTransition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1FB7E0BC1C02F36500018F65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1FB7E0CB1C02F36500018F65 /* ViewController.m in Sources */,
+				1FB7E0FE1C0305D700018F65 /* BLPanelPushPresentationController.m in Sources */,
+				1F3A922D1C0455FE0079D6CA /* BLProfileViewController.m in Sources */,
+				1FB7E0FB1C02F87B00018F65 /* BLPanelPushAnimatedTransition.m in Sources */,
 				1FB7E0C81C02F36500018F65 /* AppDelegate.m in Sources */,
 				1FB7E0C51C02F36500018F65 /* main.m in Sources */,
+				1FB7E1011C0328FD00018F65 /* BLPanelPushTransitioningDelegate.m in Sources */,
+				1FB7E0F81C02F48D00018F65 /* BLPanelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,23 +517,33 @@
 		};
 		1FB7E0EE1C02F36500018F65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B769ECD1FB625A2E4D5E9FEE /* Pods-BLCustomTransition.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BLCustomTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autodesk.BLCustomTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		1FB7E0EF1C02F36500018F65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FD2262991C154F0838C0D96 /* Pods-BLCustomTransition.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BLCustomTransition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autodesk.BLCustomTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +614,7 @@
 				1FB7E0EF1C02F36500018F65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FB7E0F01C02F36500018F65 /* Build configuration list for PBXNativeTarget "BLCustomTransitionTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +623,7 @@
 				1FB7E0F21C02F36500018F65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FB7E0F31C02F36500018F65 /* Build configuration list for PBXNativeTarget "BLCustomTransitionUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +632,7 @@
 				1FB7E0F51C02F36500018F65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

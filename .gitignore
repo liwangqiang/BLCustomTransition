@@ -1,0 +1,12 @@
+#OS X
+.DS_Store
+.swp
+
+#Xcode 
+DerivedData/
+build/
+xcuserdata/
+
+#cocoaPods
+Pods/
+*.xcworkspace
