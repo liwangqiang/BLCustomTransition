@@ -10,6 +10,13 @@
 #import "BLProfileViewController.h"
 
 static NSString * const presentationIdentifier = @"pop";
+static NSString * const unwindFromPopoverIdentifier = @"UnwindFromPopover";
+
+static NSString * const presentationModellyCurrentContextIdentifier = @"PresentModellyCurrentContext";
+static NSString * const presentationModellyFullScreenIdentifier = @"PresentModellyFullScreen";
+static NSString * const unwindFromPresentedModellyIdentifier = @"UnwindFromPresentedModelly";
+
+
 #define IS_IPHONE ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone)
 #define IS_IPAD ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
 
@@ -48,6 +55,11 @@ static NSString * const presentationIdentifier = @"pop";
         presentationController.permittedArrowDirections = UIPopoverArrowDirectionDown;
         presentationController.sourceView = self.button;
         presentationController.sourceRect = CGRectZero;
+#warning 请替换 modalPresentationStyle 属性 观察model的表现
+    } else if ([segue.identifier isEqualToString:presentationModellyFullScreenIdentifier]){
+        segue.destinationViewController.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    } else if ([segue.identifier isEqualToString:presentationModellyCurrentContextIdentifier]) {
+        segue.destinationViewController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
     }
 }
 
@@ -72,7 +84,7 @@ static NSString * const presentationIdentifier = @"pop";
 
 #pragma mark - unwind
 #warning iPhone下需要添加dismiss， iPad不用
--(IBAction)unwindFromPopoverSegue:(UIStoryboardSegue *)segue
+-(IBAction)unwindFromSegue:(UIStoryboardSegue *)segue
 {
     if (IS_IPHONE) {
         [self dismissViewControllerAnimated:YES completion:nil];

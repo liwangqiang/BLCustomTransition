@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -67,14 +68,66 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBp-26-4vI">
+                                <rect key="frame" x="207" y="468" width="187" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YdP-vT-gP8"/>
+                                    <constraint firstAttribute="width" constant="187" id="qpV-KV-jfy"/>
+                                </constraints>
+                                <state key="normal" title="Present Modelly FullScreen">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YdP-vT-gP8"/>
+                                        <exclude reference="qpV-KV-jfy"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="09n-p6-U41" kind="presentation" identifier="PresentModellyFullScreen" id="DiC-f2-p5b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVu-GT-Nd0">
+                                <rect key="frame" x="190" y="408" width="221" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XaP-nK-q8b"/>
+                                    <constraint firstAttribute="width" constant="187" id="v4N-Z6-E3f"/>
+                                </constraints>
+                                <state key="normal" title="Present Modelly CurrentContext">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XaP-nK-q8b"/>
+                                        <exclude reference="v4N-Z6-E3f"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="09n-p6-U41" kind="presentation" identifier="PresentModellyCurrentContext" id="gst-mg-Geh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="pVu-GT-Nd0" firstAttribute="centerX" secondItem="Ca6-mf-uGm" secondAttribute="centerX" id="1KT-6m-7kF"/>
+                            <constraint firstItem="wBp-26-4vI" firstAttribute="centerX" secondItem="Ca6-mf-uGm" secondAttribute="centerX" id="1O3-eV-jSl"/>
+                            <constraint firstItem="wBp-26-4vI" firstAttribute="top" secondItem="pND-J9-eaN" secondAttribute="bottom" constant="404" id="6Ye-6t-zdb"/>
                             <constraint firstItem="HOA-M7-PGH" firstAttribute="centerY" secondItem="Ca6-mf-uGm" secondAttribute="centerY" id="VoR-NI-bc3"/>
+                            <constraint firstItem="wBp-26-4vI" firstAttribute="leading" secondItem="Ca6-mf-uGm" secondAttribute="leadingMargin" constant="187" id="ZhX-LP-iwm"/>
+                            <constraint firstItem="wBp-26-4vI" firstAttribute="top" secondItem="pVu-GT-Nd0" secondAttribute="bottom" constant="30" id="aW0-Gl-oZn"/>
+                            <constraint firstItem="wBp-26-4vI" firstAttribute="top" secondItem="pND-J9-eaN" secondAttribute="bottom" constant="404" id="dsJ-28-GK0"/>
                             <constraint firstItem="epf-PG-YsX" firstAttribute="top" secondItem="EMG-RR-i3d" secondAttribute="bottom" constant="45" id="eej-eX-b0g"/>
                             <constraint firstItem="EMG-RR-i3d" firstAttribute="centerX" secondItem="Ca6-mf-uGm" secondAttribute="centerX" id="pwy-ua-oPo"/>
+                            <constraint firstItem="EMG-RR-i3d" firstAttribute="top" secondItem="wBp-26-4vI" secondAttribute="bottom" constant="27" id="pxw-fc-62e"/>
                             <constraint firstItem="HOA-M7-PGH" firstAttribute="centerX" secondItem="Ca6-mf-uGm" secondAttribute="centerX" id="pyG-2f-ZrW"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6Ye-6t-zdb"/>
+                                <exclude reference="ZhX-LP-iwm"/>
+                                <exclude reference="dsJ-28-GK0"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="D2F Panel" id="Zdv-x6-NQ4"/>
                     <connections>
@@ -85,6 +138,38 @@
                 <exit id="H2G-u7-K4K" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2618" y="399"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aJz-kv-evk">
+            <objects>
+                <viewController id="09n-p6-U41" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UbB-Wx-uuY"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Jh-bM-mHA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X5z-Us-ZZd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iar-Js-0Q7">
+                                <rect key="frame" x="273" y="285" width="54" height="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <segue destination="ICO-5p-TOJ" kind="unwind" identifier="UnwindFromPresentedModelly" unwindAction="unwindFromSegue:" id="Dbd-zd-yjr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iar-Js-0Q7" firstAttribute="centerX" secondItem="X5z-Us-ZZd" secondAttribute="centerX" id="JdE-1P-CPH"/>
+                            <constraint firstItem="iar-Js-0Q7" firstAttribute="centerY" secondItem="X5z-Us-ZZd" secondAttribute="centerY" id="PTy-u7-2WX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0iu-Kl-ajP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ICO-5p-TOJ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2949" y="1172"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="PNB-El-E4c">
@@ -105,7 +190,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FWl-gw-SoC" kind="unwind" unwindAction="unwindFromPopoverSegue:" id="DqK-Xv-04H"/>
+                                    <segue destination="FWl-gw-SoC" kind="unwind" identifier="UnwindFromPopover" unwindAction="unwindFromSegue:" id="3BY-G8-jgS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -119,7 +204,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DBy-Ue-xbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="FWl-gw-SoC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2618" y="1139"/>
+            <point key="canvasLocation" x="2256" y="1172"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BHW-to-acz">
@@ -158,4 +243,7 @@
             <point key="canvasLocation" x="1806" y="399"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="DiC-f2-p5b"/>
+    </inferredMetricsTieBreakers>
 </document>
